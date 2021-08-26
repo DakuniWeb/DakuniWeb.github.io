@@ -1,0 +1,422 @@
+:root {
+    --celeste: #11ecf4;
+    --azulfuerte: #154972;
+    --fondo: #18253b;
+    --blanco: #fff;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--fondo);
+    font-family: 'Montserrat', sans-serif;
+}
+.contenedor {
+    width: 90%;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header {
+    background: url('../img/fondos/headerfondo.jpg') var(--fondo);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.menu{
+    text-align: right;
+    padding-top: 10px;
+    
+}    
+header .menu a {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 20px;
+    color: var(--blanco);
+    padding-bottom: 5px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+.menu a:hover {
+    color: var(--celeste);
+    border-bottom: 2px solid var(--celeste);
+}
+.contenedor-logo-formulario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 70px 0;
+}
+
+.crotalus-logo{
+    width: 50%;
+    padding: 10px;
+}
+.crotalus-logo .logo img{
+    width: 150px;
+}
+.formulario{
+    width: 50%;
+    padding: 10px;   
+}
+.crotalus-logo h2{
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0;
+    background: -webkit-linear-gradient(#fff, #b8edff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.crotalus-logo h3{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--celeste);
+}
+.formulario h1{
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--blanco);
+}
+.formulario-contacto{
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.2)
+}
+.formulario-contacto h3{
+    color:var(--celeste);
+    font-size:24px;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="tel"]{
+    outline: none;
+    border: 2px solid transparent;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+.formulario-contacto input[type="text"]:focus,
+.formulario-contacto input[type="email"]:focus,
+.formulario-contacto input[type="tel"]:focus{
+    border: 2px solid var(--celeste);
+}
+.formulario-contacto .boton{
+    width: 100%;
+    padding: 8px;
+    background: var(--celeste);
+    color: var(--azulfuerte);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 800;
+} 
+.formulario-contacto .boton:hover{
+    color:var(--blanco)
+
+}
+/* ------ QUIENES SOMOS  ------*/ 
+.somos{
+    background: url(../img/fondos/jugadoresfondo.jpg) var(--fondo);;
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size: cover;
+    
+    
+}
+.somos-titulos{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.somos-titulos h3{
+    width: 100%;
+    color: var(--celeste);
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.somos-titulos p{
+    width: 70%;
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ------ COMPETENCIAS  ------*/ 
+
+.competiciones{
+    background: var(--blanco);
+    
+}
+.competiciones-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.competiciones-contenido h3{
+    width: 100%;
+    color: var(--azulfuerte);
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.competiciones-contenido p{
+    width: 70%;
+    color: var(--azulfuerte);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.competiciones-imagenes{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.competiciones-imagenes .thumb{
+    width: 25%;
+}
+.competiciones-imagenes .thumb img{
+    width: 100%;
+}
+
+/* ------ LOS EQUIPOS  ------*/ 
+
+.los-equipos{
+    background: url(../img/fondos/equiposfondo.jpg) var(--fondo);;
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size: cover;
+    
+    
+}
+.equipos-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.equipos-contenido h3{
+    width: 100%;
+    color: var(--celeste);
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.equipos-contenido p{
+    width: 70%;
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.equipos-imagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.equipos-imagenes .eljuego{
+    width: 25%;
+}
+.eljuego .thumb{
+    width: 100%;
+    
+}
+.eljuego .thumb img{
+    width: 100%;
+    vertical-align: top;
+}
+.eljuego .descripcion{
+    text-align: center;
+}
+.eljuego .descripcion h3{
+    color: var(--celeste);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* ------ INTERES REGISTRO --------*/
+.interesado{
+    background: url(../img/fondos/registrointeres.jpg) var(--fondo);;
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size:cover;
+    
+}
+.interesado-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 120px;}
+
+.interesado .crotalus-logo2 .logo {
+width: 100px;
+}
+
+
+.interesado-contenido h3{
+    width: 100%;
+    color: var(--blanco);
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.boton{
+    background: var(--celeste);
+    color: var(--fondo);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+    padding:5px 60px ;
+    margin-top: 20px;
+}    
+
+
+/* ------ MEDIAQUERIES  ------*/ 
+
+@media screen and (max-width:880px){
+    header .menu{
+        text-align: center;
+    }
+    .formulario h1{
+        font-size: 25px;
+    }
+    .crotalus-logo {
+        width: 30%;
+    }
+    .formulario{
+        width: 70%;
+    }
+    .crotalus-logo h2{
+        font-size: 40px;
+        font-weight: 800;
+        margin: 0;
+        background: -webkit-linear-gradient(#fff, #b8edff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .crotalus-logo h3{
+        width: 100%;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0;
+        color: var(--celeste);
+    }
+}
+@media screen and (max-width:820px){
+    .competiciones-imagenes .thumb{
+        width: 50%;
+        margin-bottom: 30px;
+    }   
+    .equipos-imagenes .eljuego{
+    width: 50%;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    .interesado-contenido,.competiciones-contenido,
+    .somos-titulos,.equipos-contenido{
+        margin-top: 80px;
+        margin-bottom: 80px;
+
+    }
+    
+    .contenedor-logo-formulario{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .crotalus-logo {
+        width: 100%;
+    }
+    
+    .formulario{
+        width: 100%;
+    }
+    .crotalus-logo {
+        width: 100%;
+    }
+    .formulario-contacto{
+        width: 100%;
+    }
+}
+@media screen and (max-width:560px){
+    .menu a {
+        font-size: 12px;
+    }
+    .contenedor-logo-formulario {
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+    .crotalus-logo .logo img{
+        width: 100px;
+    }
+    .formulario h1{
+        font-size: 20px;
+    }
+    .somos-titulos h3, 
+    .competiciones-contenido h3, 
+    .equipos-contenido h3{
+    font-size: 30px;
+
+    }
+    .somos-titulos p,
+    .competiciones-contenido p,
+    .equipos-contenido p {
+        width: 80%;
+        font-size: 14px;
+    }
+} 
+
+@media screen and (max-width:380px){
+   
+    .equipos-imagenes .eljuego{
+        width: 100%;}
+    .aun-interesado-contenido h3{
+        
+        color: var(--blanco);
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 0px;
+        margin-top: 0px;
+}
+}
+@media screen and (max-width:300px){
+    .crotalus-logo h2{
+        font-size: 30px;}
+}
+
+   
